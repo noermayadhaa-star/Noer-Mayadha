@@ -1,19 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Pink Web</title>
+    <style>
+        /* CSS UTAMA */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5; /* Warna latar pink sangat muda */
+            color: #444;
+        }
+
+        /* HEADER & NAVIGASI */
+        header {
+            background-color: #ff69b4; /* Hot Pink */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink */
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        /* KONTEN BIODATA */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            margin-bottom: 80px; /* Jarak agar tidak tertutup footer */
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffb6c1;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff1493;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ffb6c1;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #ffe4e1;
+        }
+
+        .info-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .info-table th {
+            text-align: left;
+            padding: 15px;
+            color: #ff69b4;
+            width: 35%;
+            font-weight: 600;
+        }
+
+        .info-table td {
+            padding: 15px;
+            color: #555;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff69b4;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 20px;
+            }
+            .info-table th, .info-table td {
+                display: block;
+                width: 100%;
+                padding: 8px 15px;
+            }
+            .info-table th {
+                padding-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Profil Saya</h1>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html" style="background: #ff69b4; color: white;">Biodata</a>
+    <a href="foto.html">Foto</a>
+    <a href="video.html">Video</a>
+</nav>
+
 <div class="container">
-    <div class="card">
-        <h2>Biodata Saya</h2>
-        <table style="width:100%; text-align: left; border-collapse: collapse;">
-            <tr style="border-bottom: 1px solid #ffb6c1;">
-                <th style="padding: 10px;">Maya</th>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150/ff69b4/ffffff?text=User+Photo" alt="Foto Profil" class="profile-img">
+        
+        <h2>Informasi Pribadi</h2>
+        
+        <table class="info-table">
+            <tr>
+                <th>Nama Lengkap</th>
                 <td>Noer Mayadha</td>
             </tr>
-            <tr style="border-bottom: 1px solid #ffb6c1;">
-                <th style="padding: 10px;">Tempat, Tgl Lahir</th>
+            <tr>
+                <th>Tempat, Tgl Lahir</th>
                 <td>Muara Teweh, 15 Desember 2004</td>
             </tr>
-            <tr style="border-bottom: 1px solid #ffb6c1;">
-                <th style="padding: 10px;">Hobi</th>
-                <td>Menyanyi, Traveling, Foto</td>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <td>Perempuan </td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jl. Ahmad Yani, Gg Petai No.16D, Kota Banjarbaru</td>
+            </tr>
+            <tr>
+                <th>Pekerjaan</th>
+                <td>Mahasiswi</td>
+            </tr>
+            <tr>
+                <th>Hobi</th>
+                <td>Menyanyi, Mendengarkan Musik, foto</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>halo@noermayadhaa@gmail.com</td>
             </tr>
         </table>
     </div>
 </div>
+
+<footer>
+    &copy; 2026 Noer Mayadha 
+</footer>
+
+</body>
+</html>
